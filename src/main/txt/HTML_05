@@ -1,0 +1,12 @@
+문서의 구조
+<html>
+    <head> -- 본문이 아닌 경우, 인코딩 설정 등등
+    </head>
+    <body> -- 본문
+    </body>
+</html>
+
+DOCTYPE
+<!DOCTYPE html>
+Document type declaration
+어떠한 표준에 따랐는지 확인

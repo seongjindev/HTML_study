@@ -1,0 +1,9 @@
+태그의 중첩과 목록
+<li></li>
+같은 항목을 <ul>로 묶어준다
+태그안에 태그가 있을 수 있음
+순서를 나타내려면 <ol>을 사용
+
+<li></li> list
+<ul></ul> unordered list
+<ol></ol> ordered list
