@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>text</title>
+</head>
+<body>
+<form action="">
+    <p>
+        <label for="id_txt">text : </label>
+<!--        label을 통해 이름표를 부여, for를 사용해서 input과 연결-->
+        <input id="id_txt" type="text" name="id" value="default value"></p>
+<!--    input의 id 값을 부여 후 label에 넣어야함-->
+    <p>
+        <label for="password">password :</label> <input id="password" type="password" name="pwd" value="default value"></p>
+    <p>
+        <label>textarea : <textarea cols="100" rows="10">default value</textarea></label></p>
+<!--    label을 감싸서 id 부여 없이 사용 가능-->
+<p>
+    <label>
+    <input type="checkbox" name="color" value="red"> 붉은색
+<!--        label로 감싸면 이름을 눌러도 체크가됨-->
+    </label>
+    <input id="color_blue" type="checkbox" name="color" value="blue"><label for="color_blue"> 파랑색 </label>
+</p>
+</form>
+</body>
+</html>
