@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>review_02</title>
+</head>
+<body>
+<img src="image/galaxy-11098_1280.jpg" width="100" title="우주" alt="universe">
+<!--사진추가는 img태그 사용-->
+<h1>대한민국</h1>
+<ol>
+<!--    순서가 있는 리스트 ol-->
+    <a href="HTML_review_01.html" target="_blank"><li>지리</li></a>
+<!--    이동 및 새창-->
+    <a href="HTML_review_02.html"><li>기후</li></a>
+</ol>
+<ul>
+<!--    순서가 없는 리스트 ul-->
+    <li>지리</li>
+    <li>기후</li>
+</ul>
+<h2>기후</h2>
+<p>
+<strong>북위 33도~38도, 동경 126~131도</strong>에 걸쳐 있어 냉대 동계 소우 기후와 온대 하우 기후, 온난 습윤 기후가 나타난다.<br>
+<!--    진한 글씨 strong-->
+겨울에 북부 지역은 편서풍으로 인해 시베리아와 몽골 고원의 영향을 받아 대륙성 기후를 띠어서 건조하고 무척 추우나 남부 지역은 이런 영향을 적게 받아 상대적으로 온난한 편이다.<br>
+여름에는 태평양의 영향을 받아 해양성 기후의 특색을 보여서 고온다습하다. 계절은 사계절이 뚜렷이 나타나며 대체로 북부 지역은 여름과 겨울이 길고 남부 지역은 봄과 가을이 길다.<br>
+</p>
+<!--문단을 나눌때 p태그를 사용-->
+3월 초에서 5월 초에 걸쳐 포근한 봄 날씨, 5월경에서 8월 초에는 무더운 여름이, 8월 말에서 10월 말까지는 화창하고 건조한 가을 날씨가 이어지고,<br>
+11월에 기온과 습도가 점차 낮아지기 시작하여 12월에서 2월까지는 춥고 건조한 겨울 날씨를 보인다.<br>
+중부 산간 지방을 제외하고 대체로 연 평균 기온은 10 ~ 16℃이며, 가장 무더운 달인 8월은 23 ~ 36℃, 5월은 16 ~ 19℃, 10월은 11 ~ 19℃, 가장 추운 달인 1월은 -6 ~ 3℃이다.[35]<br>
+<!--줄바꿈은 br태그 사용-->
+
+<table border="2">
+    <tr>
+        <td>물건</td><td>색깔</td><td>가격</td>
+    </tr>
+    <tr>
+        <td>책</td><td>빨강</td><td>10000</td>
+    </tr>
+    <tr>
+        <td>연필</td><td>파랑</td><td rowspan="2">1000</td>
+    </tr>
+    <tr>
+        <td>지우개</td><td>초록</td>
+    </tr>
+    <tr>
+        <td colspan="2">합계</td><td>12000</td>
+    </tr>
+
+</table>
+<form action="" method="post">
+    아이디<input type="text" name="id" value="아이디 작성">
+    <!--기본값은 value-->
+    비밀번호<input type="password" name="pwd">
+    텍스트공간<textarea>기본값</textarea>
+    <!--기본값은 안에 데이터를 넣는다-->
+    <input type="submit" value="전송">
+</form>
+<br>
+<h3>달력</h3>
+<form action="" method="post">
+    <select name="month">
+<!--        셀렉트 박스는 select 태그를 사용-->
+        <option value="1">1월</option>
+<!--        select 안에서는 option을 사용 option안에는 value로 값지정-->
+        <option value="2">2월</option>
+        <option value="3">3월</option>
+    </select>
+</form>
+<br>
+<form action="" method="post">
+    <select name="month" multiple>
+<!--        여러개를 선택할 수 있게 할수 있음-->
+        <option value="1">1월</option>
+        <option value="2" selected>2월</option>
+<!--        selected를 넣으면 기본값으로 설정된다-->
+        <option value="3">3월</option>
+    </select>
+</form>
+<form action="http://localhost/test.php" method="get">
+    <p><label for="col_red">빨강</label><input id="col_red" type="radio" name="color" value="red"></p>
+<!--    id값을 지정해서 레이블 지정 가능-->
+    <p><label>파랑<input type="radio" name="color" value="blue" checked></label></p>
+<!--    checked를 사용하면 기본값으로 지정된다-->
+<!--    전체를 레이블 지정 가능-->
+    <p>초록<input type="radio" name="color" value="green"></p>
+    <input type="submit">
+</form>
+<form action="http://localhost/test.php" method="get">
+    <p><label for="chk_red">빨강</label><input id="chk_red" type="checkbox" name="color" value="red"></p>
+    <p><label>파랑<input type="checkbox" name="color" value="blue" checked></label></p>
+    <p>초록<input type="checkbox" name="color" value="green"></p>
+    <p><input type="hidden" name="hiddendata" value="black"></p>
+    <input type="submit">
+    <input type="reset">
+<!--    form안에 있는 값이 reset된다-->
+</form>
+<br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file">
+    <input type="submit">
+</form>
+<br>
+<form action="" method="post">
+    <input type="button" value="버튼" onclick="alert('Hello')" >
+    <input type="submit">
+</form>
+
+</body>
+
+</html>
