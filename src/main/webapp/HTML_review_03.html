@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="코딩,coding">
+    <meta name="author" content="bae">
+    <title>review_03</title>
+</head>
+<body>
+<header>
+<h1>제목</h1>
+</header>
+html을 정보의 관점으로 바라보는 것이 중요하다
+<p>
+    단락 구분
+</p>
+<img src="image/galaxy-11098_1280.jpg" width="200" alt="우주이미지" title="우주">
+<strong>무궁화</strong> 삼천리 화려강산<br>
+<nav>
+<ol>
+    <li><a href="HTML_review_01.html" target="_blank">새창 리뷰1</a></li>
+    <li><a href="HTML_review_02.html">리뷰2</a></li>
+    <li><a href="HTML_review_03.html">리뷰3</a></li>
+</ol>
+</nav>
+<ul>
+    <li>순서가없음</li>
+    <li>순서가없음</li>
+    <li>순서가없음</li>
+</ul>
+<section>
+    <article>
+    <h2>본문2</h2>
+        <p>본문2 내용들</p>
+    </article>
+    <article>
+        <h2>본문3</h2>
+        <p>본문3 내용들</p>
+    </article>
+</section>
+<table border="3">
+    <tr>
+        <td>날짜</td>
+        <td>날씨</td>
+        <td>온도</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td rowspan="2">해</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>13</td>
+
+        <td>20</td>
+    </tr>
+    <tr>
+        <td colspan="2">평균온도</td>
+        <td>20</td>
+    </tr>
+</table><br>
+<form action="" method="post">
+    아이디 : <input tyep="text" name="id" value="아이디 작성">
+    비밀번호 : <input type="password" name="pwd">
+    <input type="submit" value="확인">
+</form><br>
+<form action="" method="post">
+    <select name="month">
+        <option value="1">1월</option>
+        <option value="2">2월</option>
+        <option value="3" selected>3월</option>
+    </select>
+</form><br>
+form text dropdown radio checkbox hiddenfield label method fileupload
+<form action="" method="post">
+    <p><label for="blue_col">파랑</label><input id="blue_col" type="radio" name="color" value="blue"></p>
+    <p><label>빨강<input type="radio" name="color" value="red"></label></p>
+    <p>초록<input type="radio" name="color" value="green" checked></p>
+    <input type="reset">
+    <input type="submit">
+</form><br>
+<form action="" method="post">
+    <p><label>빨강<input type="checkbox" name="color" value="red"></label></p>
+    <p><label>파랑<input type="checkbox" name="color" value="blue"></label></p>
+    <p><label>초록<input type="checkbox" name="color" value="green"></label></p>
+</form><br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file">
+    <input type="submit">
+</form>
+<br>
+<form action="" method="post">
+    <input type="button" value="버튼" onclick="alert('Hello')" >
+    <input type="submit">
+</form>
+<footer>
+    <ul>
+        <li><a href="">개인보호정책</a></li>
+        <li><a href="">회사소개</a></li>
+    </ul>
+</footer>
+</body>
+</html>
