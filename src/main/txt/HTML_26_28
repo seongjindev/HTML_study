@@ -1,0 +1,11 @@
+26. 웹개발자 도구
+F12
+HTML등을 확인 할 수 있다
+
+27. 모바일
+Toggle device toolbar
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+디바이스 폭만큼 지정해라, 확대를 지정
+
+28. iframe
+외부컨텐츠를 가져올때 사용한다
